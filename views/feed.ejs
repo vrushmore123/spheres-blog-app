@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest-like Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-600">
+
+  <!-- Navbar -->
+  <nav class=  shadow-lg bg-gray-400">
+    <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 ">
+            <a href="#" class="text-xl my-5 font-bold text-gray-800">Sphere</a>
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">Home</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About</a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Contact</a>
+          </div>
+        </div>
+        <div class="hidden sm:ml-6 sm:flex sm:items-center">
+          <button class="bg-indigo-600 text-white px-4 py-2 mx-4 rounded-md text-sm font-medium hover:bg-indigo-700">create</button>
+          <button class="bg-indigo-600 text-white px-4 py-2 mx-4 rounded-md text-sm font-medium hover:bg-indigo-700">Sign In</button>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700">Login</button>
+          
+        </div>
+
+        <div class="-mr-2 flex items-center sm:hidden">
+          <button type="button" id="menu-toggle" class="bg-gray-800 p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="max-sm:block hidden">
+    <div class="pt-2 pb-3 space-y-1">
+      <a href="#" class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Home</a>
+      <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About</a>
+      <a href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
+    </div>
+  </div>
+  
+
+  <!-- Feed -->
+
+  <!-- heading -->
+
+ <div class=" p-10 bg-blue-300">
+  <div class="bg-blue-300">
+    <div class="container mx-auto text-center ">
+      <h1 class="text-5xl font-bold  ">Blog app</h1>
+      <P class="text-semibold text-xl">"Empower your voice and share your story"</P>
+    </div>
+  
+  
+  <!-- cards -->
+   
+    <div class="container max-w-9xl mx-auto py-6 sm:px-6 lg:px-8 ">
+      <div class="px-4 py-6 sm:px-0 ">
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+  
+          <div class="flex items-center justify-center ">
+            <div class="text-center">
+              <div class="bg-white  shadow-lg rounded-lg">
+                <img src="https://cdn.dribbble.com/userupload/7096731/file/original-586dcf4a4b41f8e07a8a38c884675532.jpg?resize=450x338&vertical=center" alt="Placeholder Image" class="w-full h-auto rounded mb-4 ">
+              </div>
+              <h1 class="text-2xl text-left font-bold mb-4 my-5">Card Title</h1>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+         
+          <div class=" flex items-center justify-center ">
+            <div class="text-center">
+              <div class="bg-white  shadow-lg rounded-lg">
+                <img src="https://cdn.dribbble.com/userupload/7096731/file/original-586dcf4a4b41f8e07a8a38c884675532.jpg?resize=450x338&vertical=center" alt="Placeholder Image" class="w-full h-auto rounded mb-4 ">
+              </div>
+              <h1 class="text-2xl text-left font-bold mb-4 my-5">Card Title</h1>
+            </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class=" flex items-center justify-center ">
+            <div class="text-center">
+              <div class="bg-white  shadow-lg rounded-lg">
+                <img src="https://cdn.dribbble.com/userupload/7096731/file/original-586dcf4a4b41f8e07a8a38c884675532.jpg?resize=450x338&vertical=center" alt="Placeholder Image" class="w-full h-auto rounded mb-4 ">
+              </div>
+              <h1 class="text-2xl text-left font-bold mb-4 my-5">Card Title</h1>
+            </div>
+          </div>
+          <!-- Card 4 -->
+       
+          <div class=" flex items-center justify-center ">
+            <div class="container text-center mx-auto">
+              <div class="bg-white  shadow-lg rounded-lg ">
+                <img src="https://cdn.dribbble.com/userupload/7096731/file/original-586dcf4a4b41f8e07a8a38c884675532.jpg?resize=450x338&vertical=center" alt="Placeholder Image" class="w-full h-auto rounded mb-4 ">
+              </div>
+              <h1 class="text-2xl text-left font-bold mb-4 my-5">Card Title</h1>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+  });
+</script>
+
+
+
+</html>
+

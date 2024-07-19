@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintrest clone</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!pinterest logo-->
+<!-- <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+      <p class="header">Log in to see more</p>
+
+      <form action="login" method="post"> -->
+<!-- <input type="email" name="email" placeholder="Email" class="detail" /><br /> -->
+<!-- <input type="text" name="username" placeholder="username" class="detail" /><br /> -->
+<!-- <input type="text" name="fullname " placeholder="fullname" class="detail" /><br /> -->
+<!-- <input type="password" name="password" placeholder="Password" class="detail" />
+
+        <input type="submit" class="btn int" value="Login">
+      </form>
+    
+      <a href="/forgot">Forgot your password?</a>
+
+      ><br />
+      
+      <footer>
+        <p>
+          By continuing, you agree to Pinterest's
+          <b>Terms of Service, Privacy policy.</b>
+        </p>
+        <hr />
+        <a href="/">Already on Pinterest ? Sign up</a>
+      </footer>
+    </div>
+  </div>
+  <a href class="upbtn">Sign up</a>
+
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Pinterest Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+      <div class="text-center mb-6">
+        <h1 class="text-3xl font-bold">Pinterest Clone</h1>
+      </div>
+
+      <% if (error.length > 0) { %>
+        <p class="error font-medium text-red-600 mx-7"><%= error %></p>
+      <% } %>
+
+      <form action="/login" method="POST">
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+          <input type="text" id="username" name="username" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Username" required />
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+          <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your password" required />
+        </div>
+        <div class="flex items-center justify-between">
+          <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Sign In</button>
+          <a href="#" class="inline-block align-baseline font-bold text-sm text-red-500 hover:text-red-800">Forgot Password?</a>
+        </div>
+      </form>
+      <div class="text-center mt-4">
+        <p class="text-gray-600">
+          Don't have an account?
+          <a href="/signup" class="text-red-500 hover:text-red-800">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
